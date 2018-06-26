@@ -10,8 +10,12 @@
     background: -ms-linear-gradient(left, rgba(32,13,105,1) 0%, rgba(32,13,105,1) 100%);
     background: linear-gradient(to right, rgba(32,13,105,1) 0%, rgba(32,13,105,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#200d69', endColorstr='#200d69', GradientType=1 );
-    padding-top:120px;
-
+    
+    padding-top: 160px;
+    padding-bottom: 60px;
+    @include vp_max(767px){
+        padding-top: 100px;  
+    }
     svg{
         display: block;       
         position: relative;
@@ -39,16 +43,23 @@
      article{
          max-width: 790px;
          margin:auto;
-         padding:25px 15px 0;
+         padding:15px 15px 0;
          text-align: center;
          .heading{
              color:#ff0366;
              font-size:48px;
+             padding:15px 15px;
+             margin:0;
+             @include  vp_max(550px){
+                font-size:24px; 
+             }
          }
-         .para{color:white;font-size:22px;}
+         .para{color:white;font-size:22px;@include vp_max(767px){font-size:18px;}}
+         .btn-gre{display:inline-block;margin-top:15px;text-transform:uppercase;}
      }
      .keyboard-holder{
         margin: auto;
         max-width: 1030px;
      }
 }
+

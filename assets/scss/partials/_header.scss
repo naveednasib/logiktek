@@ -1,9 +1,23 @@
 
 .main-container{
     header{
+    
        .navbar-nav .nav-link{
-            color:white;
-            font-size:18px;
+            color:white;    font-size: 14px;
+        }
+        .navbar-nav .nav-link:hover{
+            color:#fd0365;
+        }
+        .fixed-top  {
+            padding-top: 20px;
+        }
+        .navbar-brand{
+            @include vp_max(450px){
+                margin: 0;
+                padding: 0;
+                width: 80%;
+              img{  max-width:75%}
+            }
         }
     }
    

@@ -1,17 +1,38 @@
 .holocard{
     position: relative;
     background-color:#c8c8c8;
-    padding:15px;
+    padding:0 15px 60px 15px;
+    .mid-container{
+        position: relative;
+        z-index: 2;
+    }
     .tile-container{
         text-align: center;   
         max-height: 630px;
         overflow: hidden;
         color:white;
-        .tile{ border-radius: 15px;  padding: 20px;}
+        .tile{ border-radius: 15px;  padding: 20px;
+            max-width:314px;
+          
+            margin: auto;
+        .heading{font-size:28px;
+            margin-top: 15px;
+            margin-bottom: 15px;}
+        .list{padding:0;}
+        }
         .list{ text-align: left;
-            li{    list-style: none;            }
+            li{    list-style: none;          font-size: 18px;   }
         }
         .mobile-development{background-color:#8daad4;}
+        .cop{background-color:#f69792;img{display: block;
+            margin: 55px auto;}}
+        .wd{background-color:#b498d1;
+        img{display: block;
+            margin: 26px auto;
+        }}
+        .sd{background-color:#83e1d2;
+        img{    display: block;
+            margin: 30px auto;}}
     }
     .clone{
         moz-transform: scale(-1, -1);
@@ -42,10 +63,9 @@
         width:100%;
         background-color:#e7e5e6;
     }
-    // .owl-carousel .owl-stage{
-    //     padding-left: 250px;
-    //     padding-right: 250px;
-    // }
-    // .owl-carousel{max-height: 630px;overflow-y:hidden}
+   
+    article{
+        h2{padding:60px 15px;}
+    }
 }
 
