@@ -1,0 +1,117 @@
+/*# sourceMappingURL=scss/main.scss.map */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.mid-container {
+  max-width: 1170px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container header .navbar-nav .nav-link {
+  color: white;
+  font-size: 18px;
+}
+
+.keyboard-container {
+  min-height: 100vh;
+  background: #200d69;
+  background: -moz-linear-gradient(left, #200d69 0%, #200d69 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #200d69), color-stop(100%, #200d69));
+  background: -webkit-linear-gradient(left, #200d69 0%, #200d69 100%);
+  background: -o-linear-gradient(left, #200d69 0%, #200d69 100%);
+  background: -ms-linear-gradient(left, #200d69 0%, #200d69 100%);
+  background: linear-gradient(to right, #200d69 0%, #200d69 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#200d69", endColorstr="#200d69", GradientType=1 );
+  padding-top: 120px;
+}
+.keyboard-container svg {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.keyboard-container g:hover, .keyboard-container .fillPath {
+  cursor: pointer;
+}
+.keyboard-container g:hover path, .keyboard-container .fillPath path {
+  fill: #fd0365;
+}
+.keyboard-container g:hover text, .keyboard-container .fillPath text {
+  fill: white;
+}
+.keyboard-container g {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.keyboard-container g path {
+  display: block;
+  fill: transparent;
+  shape-rendering: crispEdges;
+  transition: fill 0.9s ease;
+}
+.keyboard-container article {
+  max-width: 790px;
+  margin: auto;
+  padding: 25px 15px 0;
+  text-align: center;
+}
+.keyboard-container article .heading {
+  color: #ff0366;
+  font-size: 48px;
+}
+.keyboard-container article .para {
+  color: white;
+  font-size: 22px;
+}
+.keyboard-container .keyboard-holder {
+  margin: auto;
+  max-width: 1030px;
+}
+
+.holocard {
+  position: relative;
+  background-color: #c8c8c8;
+  padding: 15px;
+}
+.holocard .tile-container {
+  text-align: center;
+  max-height: 630px;
+  overflow: hidden;
+  color: white;
+}
+.holocard .tile-container .tile {
+  border-radius: 15px;
+  padding: 20px;
+}
+.holocard .tile-container .list {
+  text-align: left;
+}
+.holocard .tile-container .list li {
+  list-style: none;
+}
+.holocard .tile-container .mobile-development {
+  background-color: #8daad4;
+}
+.holocard .clone {
+  moz-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -ms-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+  opacity: 0.6;
+  margin-top: 2px;
+}
+.holocard .holacard-partial-container {
+  position: absolute;
+  height: 79%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #e7e5e6;
+}
+
+/*# sourceMappingURL=css/main.css.map */
