@@ -2,20 +2,8 @@
     position: relative;
     background-color:#c8c8c8;
     padding:15px;
-    .holocard-container{ 
-           position: relative;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        height: 630px;
-        width: 100%;
-        white-space:nowrap;
-        z-index: 2;}
     .tile-container{
-        width:25% ;
-        
         text-align: center;   
-        display: inline-block; 
-
         max-height: 630px;
         overflow: hidden;
         color:white;
@@ -33,14 +21,31 @@
         transform: scale(-1, -1);
         opacity: 0.6;
         margin-top:2px;
+        position: relative;
+        &::before{
+            content:'';
+            position: absolute;            
+            bottom: 11%;
+            width: 100%;
+            height: 25%;           
+            left: 0;
+            opacity: 0.1;
+            background-color: white;
+            
+        }
     }
+   
     .holacard-partial-container{
         position: absolute;
-        height: 79% ;left:0;
+        height: 70% ;left:0;
         top:0;
         width:100%;
         background-color:#e7e5e6;
-        z-index: 1;
     }
+    // .owl-carousel .owl-stage{
+    //     padding-left: 250px;
+    //     padding-right: 250px;
+    // }
+    // .owl-carousel{max-height: 630px;overflow-y:hidden}
 }
 
