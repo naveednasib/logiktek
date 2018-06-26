@@ -2,8 +2,20 @@
     position: relative;
     background-color:#c8c8c8;
     padding:15px;
+    .holocard-container{ 
+           position: relative;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: 630px;
+        width: 100%;
+        white-space:nowrap;
+        z-index: 2;}
     .tile-container{
+        width:25% ;
+        
         text-align: center;   
+        display: inline-block; 
+
         max-height: 630px;
         overflow: hidden;
         color:white;
@@ -28,6 +40,7 @@
         top:0;
         width:100%;
         background-color:#e7e5e6;
+        z-index: 1;
     }
 }
 

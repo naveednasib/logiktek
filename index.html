@@ -6,8 +6,7 @@
 
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/owl-carsole/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/plugins/animate.css" />
+
 
 </head>
 
@@ -575,9 +574,9 @@
                     <article>
                         <h2 class='text-center'>What we do </h2>
                     </article>
-                    <div class="holocard-container row owl-carousel">
+                    <div class="holocard-container clearfix ">
 
-                        <div class='tile-container item '>
+                        <div class='tile-container  '>
                             <div class="tile mobile-development">
                                 <h3 class="heading">Mobile Application 1</h3>
                                 <figure>
@@ -603,7 +602,7 @@
 
                         </div>
 
-                        <div class='tile-container item '>
+                        <div class='tile-container '>
                             <div class="tile mobile-development">
                                 <h3 class="heading">Mobile Application 2</h3>
                                 <figure>
@@ -629,7 +628,7 @@
 
                         </div>
 
-                        <div class='tile-container item '>
+                        <div class='tile-container  '>
                             <div class="tile mobile-development">
                                 <h3 class="heading">Mobile Application 3</h3>
                                 <figure>
@@ -656,7 +655,7 @@
                         </div>
 
 
-                        <div class='tile-container item '>
+                        <div class='tile-container  '>
                             <div class="tile mobile-development">
                                 <h3 class="heading">Mobile Application 4</h3>
                                 <figure>
@@ -682,32 +681,32 @@
 
                         </div>
 
-                        <div class='tile-container item '>
-                                <div class="tile mobile-development">
-                                    <h3 class="heading">Mobile Application 5</h3>
-                                    <figure>
-                                        <img src='assets/images/holocard/holo-card-mobile-app.png' class='img-fluid' alt='Mobile Application' />
-                                    </figure>
-                                    <ul class='list'>
-                                        <li>ios App</li>
-                                        <li>Android App</li>
-                                        <li>Cross platform</li>
-                                    </ul>
-                                </div>
-                                <div class="tile clone mobile-development">
-                                    <h3 class="heading">Mobile Application</h3>
-                                    <figure>
-                                        <img src='assets/images/holocard/holo-card-mobile-app.png' alt='Mobile Application' />
-                                    </figure>
-                                    <ul class='list'>
-                                        <li>ios App</li>
-                                        <li>Android App</li>
-                                        <li>Cross platform</li>
-                                    </ul>
-                                </div>
-    
+                        <div class='tile-container  '>
+                            <div class="tile mobile-development">
+                                <h3 class="heading">Mobile Application 5</h3>
+                                <figure>
+                                    <img src='assets/images/holocard/holo-card-mobile-app.png' class='img-fluid' alt='Mobile Application' />
+                                </figure>
+                                <ul class='list'>
+                                    <li>ios App</li>
+                                    <li>Android App</li>
+                                    <li>Cross platform</li>
+                                </ul>
                             </div>
-    
+                            <div class="tile clone mobile-development">
+                                <h3 class="heading">Mobile Application</h3>
+                                <figure>
+                                    <img src='assets/images/holocard/holo-card-mobile-app.png' alt='Mobile Application' />
+                                </figure>
+                                <ul class='list'>
+                                    <li>ios App</li>
+                                    <li>Android App</li>
+                                    <li>Cross platform</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
 
                     </div>
                 </div>
@@ -724,8 +723,7 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/typewriter/typewriter.js"></script>
 <script src="assets/typewriter/animate.js"></script>
-<script src="assets/typewriter/howler.min.js"></script>
-<script src="assets/owl-carsole/owl.carousel.min.js"></script>
+
 
 
 <script>
@@ -778,43 +776,10 @@
 
 
 <script>
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        autoplay: true,
-        autoPlaySpeed: 5000,
-        autoPlayTimeout: 5000,
-        autoplayHoverPause: true,
-        animateIn: 'bounceOutDown animated', // add this
-         animateOut: 'bounceInUp animated', // and this
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 4
-            }
-        }
-    })
+    $(document).ready(function () {
 
-    // $('.owl-carousel').on('translate.owl.carousel', function(e){
-    //     idx = e.item.index;
+    });
 
-
-    //     $('.owl-item.big').removeClass('bounceOutDown animated');
-    //     $('.owl-item.medium').removeClass('bounceInUp animated');
-    //     $('.owl-item').eq(idx).addClass('bounceOutDown animated');
-    //     $('.owl-item').eq(idx-1).addClass('bounceInUp animated');
-    //     $('.owl-item').eq(idx+1).addClass('bounceInUp animated');
-    // });
-
-    $('.owl-carousel').on('changed.owl.carousel', function (event) {
-        $('.owl-stage').last('.active').addClass('bounceOutDown animated');
-    })
 </script>
 
 </html>
