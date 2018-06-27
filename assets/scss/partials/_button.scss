@@ -14,7 +14,12 @@
         left: 0;
         width: 0;
         height: 100%;
-        background-color: white;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fd0365+0,fc3f87+100 */
+background: #fd0365; /* Old browsers */
+background: -moz-linear-gradient(left, #fd0365 0%, #fc3f87 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #fd0365 0%,#fc3f87 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #fd0365 0%,#fc3f87 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd0365', endColorstr='#fc3f87',GradientType=1 ); /* IE6-9 */
         transform-origin:left;
         transition:width 0.25s ease;
         z-index:-1;
@@ -22,7 +27,7 @@
     &:hover{
         // background-color:red;
         // background-position: 0 0;
-        color: #333;
+        color: white;
         &:before{
             width: 100%;
            

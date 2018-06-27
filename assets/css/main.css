@@ -29,12 +29,22 @@
     left: 0;
     width: 0;
     height: 100%;
-    background-color: white;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fd0365+0,fc3f87+100 */
+    background: #fd0365;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #fd0365 0%, #fc3f87 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #fd0365 0%, #fc3f87 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #fd0365 0%, #fc3f87 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd0365', endColorstr='#fc3f87',GradientType=1 );
+    /* IE6-9 */
     transform-origin: left;
     transition: width 0.25s ease;
     z-index: -1; }
   .btn-gre:hover {
-    color: #333; }
+    color: white; }
     .btn-gre:hover:before {
       width: 100%; }
 
@@ -124,7 +134,7 @@
 .holocard {
   position: relative;
   background-color: #c8c8c8;
-  padding: 0 15px 60px 15px; }
+  padding: 0 15px 0px 15px; }
   .holocard .mid-container {
     position: relative;
     z-index: 2; }
@@ -193,5 +203,7 @@
     background-color: #e7e5e6; }
   .holocard article h2 {
     padding: 60px 15px; }
+  .holocard .owl-dots {
+    display: none; }
 
 /*# sourceMappingURL=main.css.map */
