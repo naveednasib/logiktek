@@ -44,8 +44,7 @@ $(function () {
     autoplay: true,
     autoPlaySpeed: 500,
     autoPlayTimeout: 500,
-    autoplayHoverPause: true,
-  
+    autoplayHoverPause: true,  
     smartSpeed:500,
     animateIn: 'bounceOutDown animated', // add this
      animateOut: 'bounceInUp animated', // and this
@@ -62,17 +61,11 @@ $(function () {
     }
 })
 
-// $('.owl-carousel').on('translate.owl.carousel', function(e){
-//     idx = e.item.index;
+$(document).ready(function(){
 
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS.load('particles-js', 'assets/particles/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+          });
 
-//     $('.owl-item.big').removeClass('bounceOutDown animated');
-//     $('.owl-item.medium').removeClass('bounceInUp animated');
-//     $('.owl-item').eq(idx).addClass('bounceOutDown animated');
-//     $('.owl-item').eq(idx-1).addClass('bounceInUp animated');
-//     $('.owl-item').eq(idx+1).addClass('bounceInUp animated');
-// });
-
-$('.owl-carousel').on('changed.owl.carousel', function (event) {
-    // $(this).css('border', '1px solid red');
-})
+});

@@ -1,7 +1,8 @@
 .keyboard-container{
    
     min-height: 100vh;
-   
+   position: relative;
+   z-index:2;
     background: rgba(32,13,105,1);
     background: -moz-linear-gradient(left, rgba(32,13,105,1) 0%, rgba(32,13,105,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(32,13,105,1)), color-stop(100%, rgba(32,13,105,1)));
@@ -60,6 +61,12 @@
      .keyboard-holder{
         margin: auto;
         max-width: 1030px;
+     }
+     .keyboard-particles{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index:1;
      }
 }
 

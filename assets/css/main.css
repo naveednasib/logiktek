@@ -55,6 +55,8 @@
 
 .keyboard-container {
   min-height: 100vh;
+  position: relative;
+  z-index: 2;
   background: #200d69;
   background: -moz-linear-gradient(left, #200d69 0%, #200d69 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, #200d69), color-stop(100%, #200d69));
@@ -113,6 +115,11 @@
   .keyboard-container .keyboard-holder {
     margin: auto;
     max-width: 1030px; }
+  .keyboard-container .keyboard-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
 
 .holocard {
   position: relative;
